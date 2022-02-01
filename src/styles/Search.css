@@ -2,4 +2,13 @@
   border-radius: 11px;
   font-size: 20px;
   padding: 0 10px;
+  border: 1px solid black;
+}
+
+.search__button {
+  color: white;
+  padding: 5px 10px;
+  border-radius: 7px;
+  background-color: rgb(239, 75, 75);
+  border: none;
 }
