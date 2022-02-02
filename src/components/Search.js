@@ -1,11 +1,18 @@
 import React, { useState } from "react";
 import "../styles/Search.css";
+import getImages from "../requests/getImages";
 
-const Search = () => {
+const Search = ({ setSearchResults }) => {
   const [searchValue, setSearchValue] = useState();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log("clicked!");
+    setSearchResults(await getImages(searchValue));
+  };
   return (
     <>
-      <form className="search__form">
+      <form className="search__form" onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder="moon"

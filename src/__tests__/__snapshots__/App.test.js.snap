@@ -25,6 +25,9 @@ exports[`App renders component correctly 1`] = `
         Go!
       </button>
     </form>
+    <p>
+      Search results
+    </p>
   </div>
 </DocumentFragment>
 `;
