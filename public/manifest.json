@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "NASA Image Search",
+  "name": "Search for images from NASA",
   "icons": [
     {
       "src": "favicon.ico",

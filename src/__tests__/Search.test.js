@@ -2,8 +2,13 @@ import { render, screen } from "@testing-library/react";
 import Search from "../components/Search";
 
 describe("Search", () => {
+  const validProps = {
+    setSearchResults: () => {},
+  };
   test("Search component renders correctly", () => {
-    const { asFragment } = render(<Search />);
+    const { asFragment } = render(
+      <Search setSearchResults={validProps.setSearchResults} />
+    );
 
     expect(asFragment()).toMatchSnapshot();
   });

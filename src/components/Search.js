@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "../styles/Search.css";
 import getImages from "../requests/getImages";
+import propTypes from "prop-types";
 
 const Search = ({ setSearchResults }) => {
   const [searchValue, setSearchValue] = useState();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("clicked!");
     setSearchResults(await getImages(searchValue));
   };
   return (
@@ -25,6 +25,10 @@ const Search = ({ setSearchResults }) => {
       </form>
     </>
   );
+};
+
+Search.propTypes = {
+  setSearchResults: propTypes.func,
 };
 
 export default Search;
