@@ -21,5 +21,5 @@ Tests can be run using the following command `npm test`
 
 The project uses the following packages:
 
-- Axios
-- PropTypes
+- Axios: for making API calls
+- PropTypes: for validating props
