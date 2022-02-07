@@ -4,6 +4,9 @@
 
 A Manchester Codes "tech-test" style project with the aim of building a React application that lets users search for images based on a query.
 
+![Desktop screenshot](./src/screenshots/desktop.png)
+![Mobile screenshot](./src/screenshots/mobile.png)
+
 ## Installation
 
 - Clone this repo
