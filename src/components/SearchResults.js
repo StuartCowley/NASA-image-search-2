@@ -3,7 +3,7 @@ import "../styles/SearchResults.css";
 
 const SearchResults = ({ results }) => {
   if (!results.length) {
-    return <p>No results</p>;
+    return <p>Enter a valid search term</p>;
   } else {
     return (
       <div className="search-results">
