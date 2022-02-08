@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/NASA-image-search/static/css/main.89f4e1cc.css",
+    "main.js": "/NASA-image-search/static/js/main.9d07686c.js",
+    "index.html": "/NASA-image-search/index.html",
+    "main.89f4e1cc.css.map": "/NASA-image-search/static/css/main.89f4e1cc.css.map",
+    "main.9d07686c.js.map": "/NASA-image-search/static/js/main.9d07686c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89f4e1cc.css",
+    "static/js/main.9d07686c.js"
+  ]
+}
