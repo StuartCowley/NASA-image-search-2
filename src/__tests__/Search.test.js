@@ -5,6 +5,7 @@ describe("Search", () => {
   const validProps = {
     setSearchResults: jest.fn(),
   };
+
   test("Search component renders correctly", () => {
     const { asFragment } = render(
       <Search setSearchResults={validProps.setSearchResults} />

@@ -3,11 +3,13 @@ import SearchResults from "../components/SearchResults";
 
 describe("SearchResults", () => {
   const validProps = ["test", "test"];
+
   test("component renders correctly", () => {
     const { asFragment } = render(<SearchResults results={validProps} />);
 
     expect(asFragment()).toMatchSnapshot();
   });
+
   test("renders placeholder text if no results", () => {
     const validProps = [];
     render(<SearchResults results={validProps} />);
@@ -15,6 +17,7 @@ describe("SearchResults", () => {
 
     expect(placeholderText).toBeInTheDocument();
   });
+
   test("correct amount of images render on page if results exist", () => {
     render(<SearchResults results={validProps} />);
     const images = screen.getAllByAltText("space");

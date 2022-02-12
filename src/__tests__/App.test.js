@@ -7,6 +7,7 @@ describe("App", () => {
 
     expect(asFragment()).toMatchSnapshot();
   });
+
   test("renders logo", () => {
     render(<App />);
     const imgElement = screen.getByAltText("nasaLogo");
