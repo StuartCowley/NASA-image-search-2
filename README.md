@@ -2,7 +2,7 @@
 
 ## About
 
-A Manchester Codes "tech-test" style project with the aim of building a React application that lets users search for images based on a query.
+A Manchester Codes "tech-test" style project with the aim of building a React application that lets users search for images based on a query using the NASA images API.
 
 View live [project](https://greenchul.github.io/NASA-image-search/)
 

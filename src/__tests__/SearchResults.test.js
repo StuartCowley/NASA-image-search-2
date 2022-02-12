@@ -8,7 +8,14 @@ describe("SearchResults", () => {
 
     expect(asFragment()).toMatchSnapshot();
   });
-  test("correct amount of images render on page", () => {
+  test("renders placeholder text if no results", () => {
+    const validProps = [];
+    render(<SearchResults results={validProps} />);
+    const placeholderText = screen.getByText("Enter a valid search term!");
+
+    expect(placeholderText).toBeInTheDocument();
+  });
+  test("correct amount of images render on page if results exist", () => {
     render(<SearchResults results={validProps} />);
     const images = screen.getAllByAltText("space");
 

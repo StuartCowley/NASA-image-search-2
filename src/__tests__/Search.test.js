@@ -3,7 +3,7 @@ import Search from "../components/Search";
 
 describe("Search", () => {
   const validProps = {
-    setSearchResults: () => {},
+    setSearchResults: jest.fn(),
   };
   test("Search component renders correctly", () => {
     const { asFragment } = render(
@@ -14,7 +14,7 @@ describe("Search", () => {
   });
 
   test("Search bar renders correctly", () => {
-    render(<Search />);
+    render(<Search setSearchResults={validProps.setSearchResults} />);
     const inputElement = screen.getByPlaceholderText("moon");
 
     expect(inputElement).toBeInTheDocument();
@@ -22,7 +22,7 @@ describe("Search", () => {
   });
 
   test("Submit button renders correctly", () => {
-    render(<Search />);
+    render(<Search setSearchResults={validProps.setSearchResults} />);
     const buttonElement = screen.getByText("Go!");
 
     expect(buttonElement).toBeInTheDocument();
